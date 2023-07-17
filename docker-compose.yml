@@ -66,7 +66,7 @@ services:
       - /:/rootfs:ro 
       - /var/run:/var/run:rw 
       - /sys:/sys:ro 
-      - /var/lib/docker/:/var/lib/docker:ro 
+      - /var/snap/docker/common/var-lib-docker:/var/lib/docker:ro
     depends_on: 
       - redis 
   redis: 
